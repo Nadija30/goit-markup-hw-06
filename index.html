@@ -369,13 +369,58 @@
   </div>
 </div>
   </footer>
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop " data-modal>
     <div class="modal">
       <button type="button" class="modal-close-btn" data-modal-close>
         <svg class="modal-close-btn-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close-modal"></use>
         </svg>
       </button>
+      <p class="modal-text">Leave your contacts and we will call you back</p>
+      <form class="modal-form">
+        <label class="modal-form-field">
+          <span class="modal-form-imput-desc">Name</span>
+          <input 
+          type="text" 
+          name="user_name"  
+          class="modal-form-imput" 
+          required 
+          pattern="[a-zA-Z]+" 
+          minlength="2">
+        </input>
+        </label>
+        <label class="modal-form-field">
+          <span class="modal-form-imput-desc">Phone</span>
+          <input 
+          type="tel" 
+          name="user_phone" 
+          class="modsl-form-imput" 
+          required 
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" 
+          title="xxx-xxx-xx-xx">
+        </input>
+        </label>
+        <label class="modal-form-field">
+          <span class="modal-form-imput-desc">Email</span>
+          <input 
+          type="Email" 
+          name="user_email" 
+          class="modsl-form-imput" 
+          required 
+          pattern="">
+        </input>
+        </label>
+          <label class="modal-form-field">
+            <span class="modal-form-imput-desc">Comment</span>
+            <textarea
+            name="user_message"
+            class="modal-form-coment"
+            placeholder="Text input"></textarea>
+          </label>
+          <input id="user-policy" type="checkbox" name="user_policy" class="modal-form-check"></input>
+          <label for="user-policy" class="modal-form-check-desc">I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
+          <button type="submit" class="modal-form-submit">Send</button>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
