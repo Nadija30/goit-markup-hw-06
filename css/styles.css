@@ -599,11 +599,14 @@ border-color: #4D5AE5;
 color: rgba(46, 47, 66, 0.4);
 }
 .modal-form-check-desc {
+display: flex;
+align-items: center;
 font-weight: 400;
 font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
 color: #8E8F99;
+margin-bottom: 24px;
 }
 
 .modal-form-check:checked + .modal-form-check-desc::before {
@@ -623,6 +626,7 @@ width: 16px;
 height: 16px;
 border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 2px;
+margin-right: 8px;
 }
 .visualy-hidden {
 position: absolute;
@@ -637,7 +641,30 @@ clip: rect(0 0 0 0);
 overflow: hidden;
 }
 
-.modal-form-submit {}
+.modal-form-submit {
+min-width: 169px;
+align-self: center;
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: var(--color-white);
+background: var(--color-iris);
+padding: 16px 32px;
+border-radius: 4px;
+border: 0;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal-form-submit:hover,
+.modal-form-submit:focus, {
+background-color: #404BBF;
+}
+
+.check-policy {
+color: #4D5AE5;    
+}
 
 /*============ /Modal form======== */
 /*========== Portfolio======*/
