@@ -519,7 +519,6 @@ fill: var(--color-white);
 /*============ /Modal vikno======== */
 /*============ Modal form======== */
 .modal-text {
-font-family: 'Roboto';
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -540,7 +539,6 @@ margin-bottom: 8px;
 
 .modal-form-imput-desc {
 display: block;
-font-family: 'Roboto';
 font-weight: 400;
 font-size: 12px;
 line-height: 1.17;
@@ -549,7 +547,7 @@ color: #8E8F99;
 margin-bottom: 4px;
 }
 
-.modal-form-imput {
+.modal-form-input {
 width: 100%;
 height: 40px;
 border: 1px solid rgba(46, 47, 66, 0.4);
@@ -557,17 +555,87 @@ border-radius: 4px;
 padding-left: 38px;
 color: #2E2F42;
 font-size: 18px;
-
+transition: border-color var(--transition-duration-and-func) ;
 }
-.modal-form-imput:hover{
-border: 1px solid #4D5AE5;
+.modal-form-input:focus {
+outline: none;
+border-color: #4D5AE5;
+}
+
+.modal-form-input-icon {
+position: absolute;
+display: block;
+top: 50%;
+left: 16px;
+transform: translateY(-50%);
+fill: #2E2F42;
+transition:fill var(--transition-duration-and-func) ;
+}
+.modal-form-input-wrapper{
+display: block;
+position: relative;   
+}
+.modal-form-input:focus + .modal-form-input-icon {
+fill: #4D5AE5;
+}
+.modal-form-coment {
+width: 100%;
+height: 120px;
+padding: 8px 16px;
+resize: none;
+color: #2E2F42;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 4px;
 }
-.modal-form-coment {}
+.modal-form-coment:focus {
+outline: none;
+border-color: #4D5AE5;    
+}
+.modal-form-coment::placeholder {
+color: rgba(46, 47, 66, 0.4);
+}
+.modal-form-check-desc {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #8E8F99;
+}
 
-.modal-form-check {}
+.modal-form-check:checked + .modal-form-check-desc::before {
+background-color: #4D5AE5;
+background-image: url(../images/check.svg);
+background-repeat: no-repeat;
+background-size:contain;
+}
+.modal-form-check:focus + .modal-form-check-desc::before {
+outline: 1px solid #4D5AE5;
+}
 
-.modal-form-check-desc {}
+.modal-form-check-desc::before {
+content:"";
+display: block;
+width: 16px;
+height: 16px;
+border: 1px solid rgba(46, 47, 66, 0.4);
+border-radius: 2px;
+}
+.visualy-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
 
 .modal-form-submit {}
 

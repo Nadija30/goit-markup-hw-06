@@ -380,36 +380,31 @@
       <form class="modal-form">
         <label class="modal-form-field">
           <span class="modal-form-imput-desc">Name</span>
-          <input
-          autofocus 
-          type="text" 
-          name="user_name"  
-          class="modal-form-imput" 
-          required 
-          pattern="[a-zA-Z]+" 
-          minlength="2">
-        </input>
+          <span class="modal-form-input-wrapper">
+            <input autofocus type="text" name="user_name" class="modal-form-input" required pattern="[a-zA-Z]+" minlength="2" />
+            <svg class="modal-form-input-icon" width="18px" height="24px">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </span>
         </label>
         <label class="modal-form-field">
           <span class="modal-form-imput-desc">Phone</span>
-          <input 
-          type="tel" 
-          name="user_phone" 
-          class="modal-form-imput" 
-          required 
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" 
-          title="xxx-xxx-xx-xx">
-        </input>
+          <span class="modal-form-input-wrapper">
+            <input type="tel" name="user_phone" class="modal-form-input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx" />
+            <svg class="modal-form-input-icon" width="18px" height="24px">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </span>
         </label>
         <label class="modal-form-field">
           <span class="modal-form-imput-desc">Email</span>
-          <input 
-          type="Email" 
-          name="user_email" 
-          class="modal-form-imput" 
-          required 
-          pattern="">
-        </input>
+          <span class="modal-form-input-wrapper">
+            <input type="Email" name="user_email" class="modal-form-input" required pattern="" />
+            <svg class="modal-form-input-icon" width="18px" height="24px">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </span>
         </label>
           <label class="modal-form-field">
             <span class="modal-form-imput-desc">Comment</span>
@@ -418,7 +413,7 @@
             class="modal-form-coment"
             placeholder="Text input"></textarea>
           </label>
-          <input id="user-policy" type="checkbox" name="user_policy" class="modal-form-check"></input>
+          <input id="user-policy" type="checkbox" name="user_policy" class="modal-form-check visualy-hidden"/>
           <label for="user-policy" class="modal-form-check-desc">I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
           <button type="submit" class="modal-form-submit">Send</button>
       </form>
