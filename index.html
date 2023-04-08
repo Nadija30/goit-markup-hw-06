@@ -53,7 +53,7 @@
     </section>
     <section class="solutions section">
       <div class="container">
-        <h2 class="effective-solutions" hidden></h2>
+        <h2 class="visualy-hidden" hidden></h2>
         <ul class="solutions-list list">
           <li class="team-solutions">
             <div class="solutions-list-icons">
@@ -367,6 +367,17 @@
       </li>
     </ul>
   </div>
+<div class="subscribe">
+    <p class="subscribe-text">Subscribe</p>
+    <form class="subscribe-form">
+      <input type="Email" name="user_email" class="subscribe-form-input" required placeholder="E-mail">
+      <button type="submit" class="subscribe-form-submit" span>Subscribe</span>
+        <svg class="subscribe-svg" width="24" height="24">
+          <use href="./images/icons.svg#icon-Frame"></use>
+        </svg>
+      </button>
+    </form>
+</div>
 </div>
   </footer>
   <div class="backdrop is-hidden" data-modal>
@@ -400,7 +411,7 @@
         <label class="modal-form-field">
           <span class="modal-form-imput-desc">Email</span>
           <span class="modal-form-input-wrapper">
-            <input type="Email" name="user_email" class="modal-form-input" required pattern="" />
+            <input type="Email" name="user_email" class="modal-form-input" required />
             <svg class="modal-form-input-icon" width="18px" height="24px">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
