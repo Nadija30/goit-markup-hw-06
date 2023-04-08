@@ -682,7 +682,6 @@ background-color: #4D5AE5;
 background-image: url(../images/check.svg);
 background-repeat: no-repeat;
 background-size:contain;
-
 }
 .modal-form-check:focus + .modal-form-check-desc::before {
 outline: 1px solid #4D5AE5;
@@ -713,11 +712,6 @@ border-radius: 4px;
 border: 0;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 transition: background-color var(--transition-duration-and-func);
-}
-
-.modal-form-submit:hover,
-.modal-form-submit:focus, {
-background-color: #404BBF;
 }
 
 .check-policy {
