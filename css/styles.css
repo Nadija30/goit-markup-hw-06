@@ -623,6 +623,7 @@ border-radius: 4px;
 padding-left: 38px;
 color: #2E2F42;
 font-size: 18px;
+background: #FCFCFC;
 transition: border-color var(--transition-duration-and-func) ;
 }
 .modal-form-input:focus {
@@ -656,6 +657,7 @@ font-weight: 400;
 font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
+background: #FCFCFC;
 border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 4px;
 }
@@ -682,6 +684,7 @@ background-color: #4D5AE5;
 background-image: url(../images/check.svg);
 background-repeat: no-repeat;
 background-size:contain;
+
 }
 .modal-form-check:focus + .modal-form-check-desc::before {
 outline: 1px solid #4D5AE5;
